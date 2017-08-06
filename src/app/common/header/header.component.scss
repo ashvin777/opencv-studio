@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  box-shadow: none;
+  .navbar-inner {
+    background: $blueDark;
+  }
+}

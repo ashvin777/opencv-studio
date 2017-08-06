@@ -1,0 +1,62 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "opencv-studio"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "app/main.ts",
+      "polyfills": "configs/polyfills.ts",
+      "test": "configs/test.ts",
+      "tsconfig": "configs/tsconfig.app.json",
+      "testTsconfig": "configs/tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../node_modules/framework7/dist/css/framework7.css",
+        "../node_modules/framework7/dist/css/framework7.material.css",
+        "../node_modules/framework7/dist/css/framework7.material.colors.css",
+        "../node_modules/framework7-icons/css/framework7-icons.css",
+        "./app/styles/variables.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "configs/environments/environment.ts",
+      "environments": {
+        "dev": "configs/environments/environment.ts",
+        "prod": "configs/environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./configs/protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/configs/tsconfig.app.json"
+    },
+    {
+      "project": "src/configs/tsconfig.spec.json"
+    },
+    {
+      "project": "configs/e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./configs/karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {
+    }
+  }
+}

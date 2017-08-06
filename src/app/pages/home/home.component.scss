@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+.page {
+  .page-content {
+    padding: 0;
+    .input-form {
+      label {
+        background: $blueDark;
+        color: white;
+        min-height: 40px;
+        line-height: 40px;
+        padding: 10px;
+      }
+    }
+  }
+}

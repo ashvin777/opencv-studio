@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+.sidemenu {
+  .list-block {
+    ul {
+      padding: 0px 10px;
+      &:after,
+      &:before {
+        display: none;
+      }
+      li.item-content {
+        background: $blueDark;
+        margin: 10px 0;
+        min-height: 40px;
+        border-radius: 5px;
+        .item-inner {
+          &:after {
+            display: none;
+          }
+          min-height: 40px;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: white;
+          .item-title {
+            width: 100%;
+            white-space: normal;
+            text-align: center;
+          }
+        }
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+        &:active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

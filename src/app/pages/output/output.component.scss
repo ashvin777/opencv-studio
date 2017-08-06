@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+.list-block {
+  padding: 0 10px;
+  ul {
+    &:after,
+    &:before {
+      display: none;
+    }
+    li.container {
+      background: $grayLightest;
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

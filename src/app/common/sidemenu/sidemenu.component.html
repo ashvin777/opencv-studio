@@ -1,0 +1,13 @@
+<div class="sidemenu">
+  <div class="list-block" >
+    <ul>
+      <li class="item-content" *ngFor="let task of taskList" (click)="onTaskClick(task)">
+        <div class="item-inner">
+          <div class="item-title">
+            {{task.name}}
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

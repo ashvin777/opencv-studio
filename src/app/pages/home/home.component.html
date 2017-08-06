@@ -1,0 +1,10 @@
+<div class="page">
+  <div class="page-content">
+    <input #fileInput type="file" accept="image/*" (change)="uploadImage($event)" style="display:none"/>
+    <div class="button button-primary" (click)="openImageUpload($event)">Upload Image</div>
+    <div class="row">
+      <app-sidemenu class="sidemenu col-30" (action)="onTaskBarActions($event)"></app-sidemenu>
+      <app-output class="output col-70" [image]="image"></app-output>
+    </div>
+  </div>
+</div>
